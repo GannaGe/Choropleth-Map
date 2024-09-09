@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choropleth Map</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">United States Educational Attainment</h1>
+    <p id="description">
+      Percentage of adults age 25 and older with a bachelor's degree or higher
+      (2010-2014)
+    </p>
+    <svg id="svgContainer"></svg>
+    <svg id="legend">
+      <g>
+        <rect class="legend-rect" fill="red" x="0" y="0" />
+        <text x="10" y="30"><=15%</text>
+      </g>
+      <g>
+        <rect class="legend-rect" fill="orange" x="60" y="0" />
+        <text x="70" y="30"><=30%</text>
+      </g>
+      <g>
+        <rect class="legend-rect" fill="yellow" x="120" y="0" />
+        <text x="130" y="30"><=45%</text>
+      </g>
+      <g>
+        <rect class="legend-rect" fill="green" x="180" y="0" />
+        <text x="195" y="30">>45%</text>
+      </g>
+    </svg>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

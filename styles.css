@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #020073;
+  background-image: url("https://www.transparenttextures.com/patterns/grey-washed-wall.png");
+}
+
+#title {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 40px 0 20px 0;
+}
+
+#description {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#svgContainer {
+  position: relative;
+  min-width: 1000px;
+  min-height: 600px;
+  background-color: #020073;
+}
+
+#legend {
+  font-size: 12px;
+  font-weight: 700;
+  width: 240px;
+  height: 32px;
+  padding: 15px;
+  background-color: azure;
+  margin-bottom: 40px;
+}
+
+.legend-rect {
+  width: 60px;
+  height: 15px;
+}
